@@ -1,0 +1,54 @@
+
+.text-container {
+  text-align: center;
+}
+
+/* School Subject cards */
+
+h2 {
+  font-family: 'Cinzel Decorative', 'Poppins';
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skills {
+  padding: 5rem 5%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.skill-card {
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+
+  
+}
+
+.skill-card:hover {
+    transform: translateY(-30px);
+    color: white;
+    background-color: var(--primary-color-2);
+  }
+
+
+
+
+
+/* Configurações individuais */
+
+span.tag {
+
+  color: var(--secondary-color);
+  font-family: "Cinzel Decorative","Poppins";
+  font-weight: bold;
+}

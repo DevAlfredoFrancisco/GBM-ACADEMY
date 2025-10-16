@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- biblioteca de icones -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Biblioteca de alertas -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+     <!-- Conexão com o CSS -->
+      <link rel="stylesheet" href="/css/imports.css">
+      <link rel="stylesheet" href="/css/main.css">
+    <title>GBM Education| INSCRIÇÃO</title>
+
+</head>
+
+<body>
+
+     <header>
+      <nav id="navbar">
+        <img
+          src="\img\GBMLOGO-BLACK.png"
+          alt="Logo"
+          class="logo"
+        />
+
+        <ul id="nav_list">
+          <li class="nav-item">
+            <a href="\index.html" class="nav-link"> Inicio </a>
+          </li>
+
+          <li class="nav-item active">
+            <a href="\inscricao.html" class="nav-link"> Inscrição </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="\sobre.html" class="nav-link"> Sobre </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="\contactos.html" class="nav-link"> Contactos </a>
+          </li>
+        </ul>
+
+        <a href="#" class="login-link"> Inscrever-se </a>
+
+        <div class="toggle-button open">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown-menu">
+        <li class="nav-item">
+          <a href="\index.html" class="nav-link"> Inicio </a>
+        </li>
+
+        <li class="nav-item active">
+          <a href="\inscricao.html" class="nav-link"> Inscrição </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="\sobre.html" class="nav-link"> Sobre </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="\contactos.html" class="nav-link"> Contactos </a>
+        </li>
+
+        <li class="login-link">
+          <a href="#" class="login-link"> Inscrever-se </a>
+        </li>
+      </div>
+    </header>
+    
+    <section class="page-title">
+        <h2>
+            Inscrição
+        </h2>
+        <h1>
+            Faça a sua inscrição
+        </h1>
+        <p>
+            Dê o primeiro passo para a sucesso como estudante nessa jornada rumo a aquisição de conhecimentos, fornecendo os dados necssários para a sua inscrição!
+        </p>
+    </section>
+
+    <main id="main_container">
+
+        <section id="registration_form_container">
+            <h3>
+                Inscrever-se
+            </h3>
+            <form method="POST" action="#" id="registration_form">
+                <div class="input-group">
+                    <label for="nome">
+                        Nome Completo
+                    </label>
+                    <input 
+                    type="text"
+                    id="name"
+                    name="nome"
+                    required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <input 
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">
+                        Telefone
+                    </label>
+                    <input 
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="classe">
+                        Classe
+                    </label>
+                    <input 
+                    type="text"
+                    id="classe"
+                    name="classe"
+                    list="listclasse"
+                    required
+                    >
+                    <!-- Lista de Classes -->
+                    <datalist id="listclasse">
+                        <option value="10ª"></option>
+                        <option value="11ª"></option>
+                        <option value="12ª"></option>
+                    </datalist>
+                </div>
+
+                <div class="input-group">
+                    <label for="curso">
+                        Curso
+                    </label>
+                    <input 
+                    type="text"
+                    id="curso"
+                    name="curso"
+                    list="listcurso"
+                    required
+                    >
+
+                </div>
+
+                <div class="input-group">
+                    <label for="disciplina">
+                        Matéria
+                    </label>
+                    <input 
+                    type="disciplina"
+                    id="disciplina"
+                    name="disciplina"
+                    list="listmateria"
+                    required
+                    >
+                    <!-- Lista de Cursos -->
+                    <datalist id="listmateria">
+                        <option value="Línguas"></option>
+                        <option value="Tecnologias"></option>
+                        <option value="Ciências"></option>
+                        <option value="Outras"></option>
+                    </datalist>
+                </div>
+                <div class="input-group">
+                    <label for="Pacotes">
+                        Pacotes
+                    </label>
+                    <input 
+                    type="text"
+                    id="Pacotes"
+                    name="Pacotes"
+                    list="listpacotes"
+                    required
+                    >
+                    <!-- Lista de Pacotes -->
+                    <datalist id="listpacotes">
+                        <option value="1 MATÉRIAS-16.000kzs"></option>
+                        <option value="2 MATÉRIAS-24.000kzs"></option>
+                        <option value="3 MATÉRIAS-32.000kzs"></option>
+                        <option value="4 MATÉRIAS-48.000kzs"></option>
+                    </datalist>
+                </div>
+
+                <button type="submit">
+                    Enviar solicitação
+                </button>
+
+                
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+      <img
+        src="\img\GBMLOGO-WHITE.png"
+        alt="logo"
+        class="footer-logo"
+      />
+
+      <div id="footer_link_content">
+        <ul class="footer-list">
+          <li>
+            <h3 class="list-title">Informações do instituto parceiro IPOCET</h3>
+          </li>
+
+          <li>
+            <a href="https://www.ipocet.com/localizacao/" class="footer-link">
+              Localização
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.ipocet.com/" class="footer-link"> Escola </a>
+          </li>
+
+          <li>
+            <a href="https://www.ipocet.com/contactos/" class="footer-link">
+              Contactos
+            </a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <h3 class="list-title">Cursos em destaque do IPOCET</h3>
+          </li>
+
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Informa%CC%81tica.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Técnico de Informática
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Electro%CC%81nica-e-Telecomunicac%CC%A7o%CC%83es.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Eletrónica e Telecomunicações
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.ipocet.com/wp-content/uploads/2021/05/Curso-Te%CC%81cnico-Gesta%CC%83o-Sistemas-Informa%CC%81ticos.pdf"
+              class="footer-link"
+              target="_blank"
+            >
+              Gestão dos Sistemas Informáticos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="/static/js/header.js"></script>
+</body>
+</html>
