@@ -13,6 +13,12 @@
     />
     <!-- Biblioteca de alertas -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+    <!-- Biblioteca de envio de emails -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <!-- Conexão com o CSS -->
     <link rel="stylesheet" href="/css/imports.css" />
     <link rel="stylesheet" href="/css/main.css" />
@@ -85,10 +91,10 @@
     <main id="main_container">
       <section id="registration_form_container">
         <h3>Inscrever-se</h3>
-        <form method="POST" action="#" id="registration_form">
+        <form method="post" action="#" id="registration_form">
           <div class="input-group">
             <label for="nome"> Nome Completo </label>
-            <input type="text" id="name" name="nome" required />
+            <input type="text" id="name" name="name" required />
           </div>
 
           <div class="input-group">
@@ -150,17 +156,17 @@
             <label for="Pacotes"> Pacotes </label>
             <input
               type="text"
-              id="Pacotes"
-              name="Pacotes"
+              id="pacotes"
+              name="pacotes"
               list="listpacotes"
               required
             />
             <!-- Lista de Pacotes -->
             <datalist id="listpacotes">
-              <option value="1 MATÉRIAS-16.000kzs"></option>
-              <option value="2 MATÉRIAS-24.000kzs"></option>
+              <option value="1 MATÉRIAS-12.000kzs"></option>
+              <option value="2 MATÉRIAS-20.000kzs"></option>
               <option value="3 MATÉRIAS-32.000kzs"></option>
-              <option value="4 MATÉRIAS-48.000kzs"></option>
+              <option value="4 MATÉRIAS-44.000kzs"></option>
             </datalist>
           </div>
 
@@ -243,6 +249,8 @@
       </div>
     </footer>
 
+    
     <script src="/js/header.js"></script>
+    <script src="/js/email.js"></script>
   </body>
 </html>
